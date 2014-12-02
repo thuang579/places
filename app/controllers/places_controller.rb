@@ -34,7 +34,7 @@ class PlacesController < ApplicationController
 		if @place.save
 			redirect_to '/'
 		else
-			flash[:notice] = @placeerrors.full_messages.to_sentence
+			flash[:notice] = @place.errors.full_messages.to_sentence
 			render 'new'
 		end
 
