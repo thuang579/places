@@ -1,0 +1,8 @@
+<h1> Detail on place </h1>
+
+<td><%= @place.name %></td> <br/>
+<td><%= @place.location %></td> <br/>
+<td><%= @place.place_type %></td>
+
+<%= link_to 'Edit this place', "/places/#{@place.id}/edit" %>
+<%= link_to 'Delete this place', "/places/#{@place.id}", method: :delete %>

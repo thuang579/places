@@ -1,0 +1,20 @@
+<h1>Create a new place in LA </h1>
+
+<%= form_for @place do |p| %>
+
+<%= p.label :name %>
+<%= p.text_field :name %>
+
+
+<%= p.label :location %>
+<%= p.text_field :location %>
+
+<%= p.label :place_type %>
+<%= p.select :place_type, [['Food', 'Food'], ['Activity', 'Activity']] %>
+
+
+<%= p.submit 'Create Place' %>
+
+
+
+	<% end %>

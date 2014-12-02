@@ -1,0 +1,19 @@
+<h1>Editing the place </h1>
+
+<%= @place.name %>
+
+<%= form_for @place do |p| %>
+
+<%= p.label :name %>
+<%= p.text_field :name %>
+
+
+<%= p.label :location %>
+<%= p.text_field :location %>
+
+<%= p.label :place_type %>
+<%= p.select :place_type, [['Food', 'food'], ['Activity', 'Activity']] %>
+
+<%= p.submit 'Update Place' %>
+
+<% end %>

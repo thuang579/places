@@ -1,0 +1,14 @@
+<h1> Places in LA </h1>
+
+<a href='/places/new'>Create a new place</a>
+
+<table>
+<% @places.each do |place| %>
+<tr>
+<td><%= link_to place.name, place %></td>
+
+
+<% end %>
+
+
+</table>
