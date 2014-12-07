@@ -8,6 +8,12 @@
 </head>
 <body>
 
+<h1>Welcome to <a href="#">Places in LA<a/></h1>
+
+<% if flash[:notice] %>
+<p><%= flash[:notice] %> </p>
+<% end %>
+
 <%= yield %>
 
 </body>
